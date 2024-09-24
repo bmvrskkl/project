@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Online Bidding System</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <h1>Online Bidding System</h1>
+    <nav>
+      <button id="loginButton">Login</button>
+      <button id="registerButton">Register</button>
+      <button id="profileButton">Profile</button>
+    </nav>
+  </header>
+  
+  <main id="mainContent">
+    <section id="auctionList">
+      <h2>Available Auctions</h2>
+      <div id="auctions"></div>
+    </section>
+
+    <section id="auctionDetails" style="display: none;">
+      <h2 id="auctionTitle"></h2>
+      <p id="auctionDescription"></p>
+      <h3 id="currentBid"></h3>
+      <input type="number" id="bidAmount" placeholder="Your bid" />
+      <button id="placeBidButton">Place Bid</button>
+      <div id="bidHistory"></div>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>                                                     
